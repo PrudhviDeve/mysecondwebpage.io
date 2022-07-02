@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border : 5px solid red;
+        }
+        h1 {
+            text-align: center;
+            
+           
+        }
+        #main {
+            border : 3px solid brown;
+            width : 300px;
+            height : 200px;
+            position : relative;
+        }
+        #one {
+            border : 3px solid darkorchid;
+            width : 300px;
+            padding : 5px;
+            margin : 5px;
+            position : absolute;
+            top : 50px;
+            left : 10px;
+        }
+        #two {
+            border : 3px solid darkgreen;
+            padding : 5px;
+            
+            
+            
+            width : 300px;
+        }
+        #para {
+            border : 5px solid rgb(160, 48, 123);
+            
+            padding : 10px ;
+        }
+        * {
+            margin : 20px;
+        }
+
+    </style>
+</head>
+<body>
+              <h1>CSS Positions</h1>  
+
+              <div id="main">
+                 
+                <p>This is a relatively positioned element.</p>
+
+                       <div id="one">
+
+                         <p>This is an Absolutely positioned element</p>
+
+                        </div>
+
+              </div>
+
+              <div id="two">
+
+                <p>This is a static element.</p>
+
+              </div>
+
+            <div id="para">
+
+              <p> Here We can see that the absolutely positioned element #one is removed from the normal flow and 
+                is positioned at the offset given making the view port as a reference.
+              </p>
+              <p>So the conclusion is whenever an element is absolutely positioned it is taken away from its normal
+                position and everything renders as if the absolutely positioned element is not at all there. </p>
+
+              <p> Generally when an element is positioned absolutely , <strong>it takes the reference of the view port or the browser window. Here we have given its parent the position:relative , so here it took
+                the reference of its parent and aligned according to that given offset from its parent.</strong></p>
+              </p>
+                
+            </div>
+</body>
+</html>
